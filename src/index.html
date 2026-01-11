@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body>
+
+    <!-- Login Modal -->
+    <div class="modal-overlay" id="login-modal">
+        <div class="modal">
+            <h2 class="modal-title">Выберите псевдоним</h2>
+            <form id="login-form">
+                <input type="text" class="nickname-input" placeholder="Введите ваш никнейм" required>
+                <button type="submit" class="btn">Продолжить</button>
+                <div class="error-msg hidden"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Chat UI -->
+    <div class="chat-container hidden" id="chat-interface">
+        <aside class="users-panel">
+            <ul class="users-list" id="users-list"></ul>
+        </aside>
+        <main class="chat-area">
+            <div class="messages-box" id="messages-box"></div>
+            <form class="input-area" id="chat-form">
+                <input type="text" class="chat-input" placeholder="Type your message here..." required>
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>
