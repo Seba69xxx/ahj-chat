@@ -1,6 +1,6 @@
 export default class ChatAPI {
   constructor() {
-    this.url = 'ws://localhost:7070'; 
+    this.url = 'wss://ahj-chat-rx22.onrender.com'; 
     this.ws = null;
     this.onMessage = null;
   }
